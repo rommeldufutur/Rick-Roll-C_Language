@@ -1,0 +1,14 @@
+build:
+	gcc -Wfatal-errors \
+	-std=c99 \
+	./*.c \
+	-I"C:\Developpement\sdlib\include\SDL2" \
+	-L"C:\Developpement\sdlib\lib" \
+	-I"C:\Developpement\SDL2_mixer\i686-w64-mingw32\include\SDL2" \
+	-L"C:\Developpement\SDL2_mixer\i686-w64-mingw32\lib" \
+	-lmingw32 \
+	-lSDL2main \
+	-lSDL2 \
+	-lSDL2_mixer \
+	-lSDL2_mixer.dll \
+	-o "C:/Users/i7Matisse/Documents/DEV/C/Rick Roll/Output/RickRoll-V1.exe"
